@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    container_name: flask-web
+    depends_on:
+      - redis-1
+    environment:
+      - REDIS_HOST=redis-1
+      - REDIS_PORT=6379
+    networks:
+      - app-network
+
+  redis-1:
+    image: redis:latest
+    container_name: my-redis-1
+    networks:
+      - app-network
+    volumes:
+      - redis-data:/data
+  
+  nginx:
+    image: nginx:latest
+    container_name: nginx-lb
+    ports:
+      - "5000:80"  # Host 5000 -> Container 80
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - web
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  redis-data:
+    driver: local
