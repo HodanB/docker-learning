@@ -46,6 +46,10 @@ sudo docker compose up -d --build
 Visit: http://localhost:5000
 Visit: http://localhost:5000/count
 
+![Flask application welcome page displaying Hello World text on a clean white background with minimal styling](image.png)
+
+![Redis counter page showing visit count number centered on a white background with simple typography](image-1.png)
+
 ---
 
 ## 📦 AWS ECR Integration
