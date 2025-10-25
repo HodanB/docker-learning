@@ -30,7 +30,7 @@ Visit: http://localhost:5002
 
 ---
 
-### 2️⃣ Hello Flask — Flask + MySQL
+### 2️⃣ Hello Flask — Flask + Redis
 A Flask + Redis counter app with Nginx load balancing and persistent Redis data.
 
 **Key Concepts:**
