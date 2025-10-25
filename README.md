@@ -1,6 +1,6 @@
 # 🐳 Docker Learning Journey
 
-This repository documents my Docker learning path — from building and managing single-container apps to handling multi-container environments using Redis, MySQL, and Nginx.
+This repository documents my Docker learning path - from building and managing single-container apps to handling multi-container environments using Redis, MySQL, and Nginx.
 
 ---
 
