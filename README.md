@@ -15,7 +15,7 @@ This repository documents my Docker learning path - from building and managing s
 
 ## 💡 Projects
 
-### 1️⃣ Hello Flask — Flask + MySQL
+### 1️⃣ Hello Flask - Flask + MySQL
 A simple Flask web app connected to a MySQL database using Docker Compose.
 
 **Key Concepts:**
@@ -30,7 +30,7 @@ Visit: http://localhost:5002
 
 ---
 
-### 2️⃣ Hello Flask — Flask + Redis
+### 2️⃣ Flask Challenge - Flask + Redis
 A Flask + Redis counter app with Nginx load balancing and persistent Redis data.
 
 **Key Concepts:**
